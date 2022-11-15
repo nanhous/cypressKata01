@@ -43,7 +43,7 @@ describe("Suite de tests formulaire", () => {
     );
     //VALIDATION
     //cy.get('[data-cy="form"]').submit();
-    cy.get('[data-cy="submit"]').click();
+    //cy.get('[data-cy="submit"]').click();
   });
 
   it("Réinitialisation formulaire", () => {
