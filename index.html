@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrainement HTML Automation Tester Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+  <h1>Inscription au club des tests autos : </h1>
+  <div class="container">
+    <form data-cy="form" action="mailto:sabrina.nanhou@gmail.com" method="post">
+      <label for="lastName" data-cy="lastNameLabel"> <span> *</span> Nom </label>
+      <input type=" text" data-cy="last-name" name="lastName" placeholder="Entrez votre nom" id="lastName" ; required />
+
+      <label for="firstName" data-cy="firstNameLabel"> <span> *</span> Prénom </label>
+      <input type=" text" data-cy="first-name" name="firstName" placeholder="Entrez votre prénom" id="firstName" ; required />
+
+      <label for="email" data-cy="emailLabel"> <span> *</span> Email</label>
+      <input type="email" data-cy="email" name="email" id="email" placeholder="Entrez votre email" required />
+
+      <label for="age" data-cy="ageLabel"><span> *</span> Age</label>
+      <input type="text" data-cy="age" name="age" placeholder="Entrez votre age" required />
+
+      <label data-cy="recommendLabel">Est-ce que tu recommanderais Automation Tester Academy à un ami ?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" data-cy="recommend-yes" name="recommend" value="yes" />
+          Oui
+        </label>
+
+        <label>
+          <input type="radio" data-cy="recommend-no" name="recommend" value="No" />
+          Non
+        </label>
+
+        <label>
+          <input type="radio" data-cy="recommend-maybe" name="recommend" value="Maybe" />
+          Peut-etre
+        </label>
+      </div>
+
+      <label class="target" data-cy="frameworLabel">Frameworks d'automatisation de tests que vous connaissez </label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" data-cy="cypress" name="skill" value="cypress" />
+          Cypress
+        </label>
+
+        <label>
+          <input type="checkbox" data-cy="selenium" name="skill" value="selenium" />
+          Selenium Webdriver
+        </label>
+
+        <label>
+          <input type="checkbox" data-cy="protractor" name="skill" value="protractor" />
+          Protractor
+        </label>
+
+        <label>
+          <input type="checkbox" data-cy="appium" name="skill" value="appium">
+          Appium
+        </label>
+
+        <label>
+          <input type="checkbox" data-cy="calabash" name="skill" value="calabash" />
+          Calabash
+        </label>
+
+      </div>
+
+      <label for="level" data-cy="levelLabel">Comment trouvez-vous HTML ?<span> *</span></label>
+      <select name="level" data-cy="level" required>
+        <option value="low" data-cy="level-low">Facile</option>
+        <option value="medium" data-cy="level-medium">Moyen</option>
+        <option value="high" data-cy="level-high">Dur</option>
+        <option value="very-high" data-cy="level-very-high">Très dur</option>
+      </select>
+
+      <label class="target" for="suggestion" data-cy="suggestionLabel">Vos suggestions pour la formation</label>
+      <textarea name="suggestion" data-cy="suggestions" id="suggestions" cols="5" rows="4"></textarea>
+
+      <button type="submit" value="submit" data-cy="submit">Envoyer</button>
+      <button type="reset" value="cancel" data-cy="reset">Annuler</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
